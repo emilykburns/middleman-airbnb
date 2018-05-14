@@ -1,14 +1,10 @@
----
-title: Le Wagon - Middleman - About
----
-<div id="about">
-  <div class="about-content">
+<div id="team">
+  <div class="a«team-content">
     <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
-    <ul class="list-inline">
-      <% data.users.each do |user| %>
+    <ul class="list-inline text-center">
+      <% ["emilykburns", "KindScrabble"].each do |gh_username|%>
         <li>
-          <% link_to "https://kitt.lewagon.com/alumni/#{user.github_nickname}", target: "_blank" do %>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
           <% end %>
           <h2><%= user.name %></h2>
           <p>
@@ -21,3 +17,4 @@ title: Le Wagon - Middleman - About
     </ul>
   </div>
 </div>
+
